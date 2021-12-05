@@ -10,6 +10,25 @@ body {
   background: #000;
 }
 
+.webDev {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .canvas-lg {
+    display: none;
+  }
+
+  .webDev {
+    display: inline;
+  }
+}
+
 .canvas-wrapper {
   min-height: 100vh;
   overflow: hidden;
@@ -71,7 +90,7 @@ ul {
     rgba(140, 140, 140, 1) 100%
   );
   margin: 0;
-  min-height: 70vh;
+  min-height: 100vh;
   /* display: flex;
   justify-content: space-around;
   align-items: center; */
@@ -83,6 +102,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sphere-wrapper,
